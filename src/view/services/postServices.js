@@ -18,6 +18,4 @@ const fetchPosts = () => {
 }
 
 
-return fetchPosts;
-
 export { fetchPosts };
