@@ -1,28 +1,37 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import '../src/index';
+
+
+import ReactDOM from 'react-dom';
+
+//COMPONENTS
+import { Header } from './view/header/Header';
+import { Footer } from './view/footer/Footer';
+// import { BlogPage } from './view/BlogPage';
+// import { PostPage } from './view/PostPage';
+// import { Authors } from './view/Authors';
+
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <Header />
+
+
+        <Footer />
+
       </div>
-    );
+    )
   }
 }
+
+
+
 
 export default App;
